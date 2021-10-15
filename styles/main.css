@@ -281,11 +281,14 @@ html {
 body.home {
   display: grid;
   grid-template-columns: 1fr repeat(10, 6rem) 1fr;
-  grid-template-rows: 20vh repeat(2, -webkit-min-content) 35vh;
-  grid-template-rows: 20vh repeat(2, min-content) 35vh;
+  grid-template-rows: 20vh repeat(2, 50vh) 35vh;
+  position: relative;
 }
 
-.home-header {
+.header {
+  width: 100%;
+  height: 20vh;
+  background-color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,19 +298,16 @@ body.home {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  grid-column: 1/-1;
-  border: 1px solid red;
+  padding: 1.2rem 3.2rem 1.2rem 1.2rem;
+  position: fixed;
 }
-.home-header .logo {
-  width: 10rem;
-  border: 1px solid blue;
+.header .logo {
+  width: 6rem;
 }
-.home-header .date {
-  border: 1px solid blue;
-  margin-left: auto;
+.header .date {
+  margin: 0 2rem 0 auto;
 }
-.home-header .hamburger {
-  border: 1px solid blue;
+.header .hamburger {
   width: 2rem;
   height: 2rem;
   display: -webkit-box;
@@ -324,11 +324,31 @@ body.home {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.home-header .hamburger .bar {
-  height: 4px;
-  width: 40px;
+.header .hamburger .bar {
+  height: 3px;
+  width: 35px;
   background: #000;
+  border-radius: 30px;
 }
-.home-header .hamburger .bar2 {
-  margin: 5px 0;
+.header .hamburger .bar2 {
+  margin: 8px 0;
+}
+
+.footer {
+  background: purple;
+  grid-column: 1/-1;
+}
+
+.spacer {
+  visibility: hidden;
+}
+
+.home-hero {
+  background: blue;
+  grid-column: 1/-1;
+}
+
+.projects {
+  background: green;
+  grid-column: 1/-1;
 }
