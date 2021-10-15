@@ -2,12 +2,13 @@
 body.home {
   display: grid;
   grid-template-columns: 1fr repeat(10, 6rem) 1fr;
-  grid-template-rows: 20vh repeat(2, min-content) 35vh;
+  grid-template-rows: 20vh repeat(2, 50vh) 35vh;
+  position: relative;
 }
 
 // ABOUT
 body.about {
-
+  
 }
 
 // CONTACT
