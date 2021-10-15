@@ -275,6 +275,14 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 125%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body.home {
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 6rem) 1fr;
+  grid-template-rows: 20vh repeat(2, -webkit-min-content) 35vh;
+  grid-template-rows: 20vh repeat(2, min-content) 35vh;
 }
 
 .home-header {
@@ -287,6 +295,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  grid-column: 1/-1;
   border: 1px solid red;
 }
 .home-header .logo {

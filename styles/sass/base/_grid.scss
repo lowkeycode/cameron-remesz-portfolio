@@ -1,5 +1,16 @@
 //  HOME
-
 body.home {
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 6rem) 1fr;
+  grid-template-rows: 20vh repeat(2, min-content) 35vh;
+}
+
+// ABOUT
+body.about {
+
+}
+
+// CONTACT
+body.contact {
   
 }
