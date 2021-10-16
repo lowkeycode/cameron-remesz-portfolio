@@ -2,13 +2,14 @@
   visibility: hidden;
 }
 
+// HOMER HEADER HERO
 .home-hero {
   grid-column: 2 / -2;
   grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: $space-lrg;
+  padding: $space-lrg $space-lrg $space-huge $space-lrg;
 
   & > * {
     font-size: $fs-big;
@@ -21,7 +22,83 @@
   }
 }
 
+// HOME PROJECTS
+// todo
 .projects {
   grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 30vw);
+
+  & .project-container-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  & .project-container-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  & .project-container-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  & .project-container-4 {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
 }
 
+.project-container {
+  position: relative;
+  cursor: pointer;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: inherit;
+    background: rgba(9, 9, 9, 0.5);
+    opacity: 0;
+    transition: all 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      color: $color-white;
+    }
+
+    &--title {
+      font-size: $fs-med;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: $space-xs;
+    }
+
+    &--stack {
+      list-style: none;
+      text-align: center;
+
+      & li {
+        margin: $space-xs 0;
+      }
+    }
+  }
+}
+
+.project-container:hover > .project-container__overlay {
+  opacity: 1;
+}

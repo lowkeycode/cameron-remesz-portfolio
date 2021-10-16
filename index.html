@@ -1,50 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Cameron Remesz</title>
-</head>
-<body class="home">
-  <!-- HEADER -->
-  <nav class="nav">
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="../img/initials.png" alt="Cameron Remesz Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/73ac896ba9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Cameron Remesz</title>
+  </head>
+  <body class="home">
+    <!-- HEADER -->
+    <nav class="nav">
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="../img/initials.png" alt="Cameron Remesz Logo" />
+      </div>
+      <!-- DATE -->
+      <div class="date">
+        <p class="date__copy">Thursday Oct 2, 2:15PM</p>
+      </div>
+      <!-- MENU -->
+      <button class="navicon" aria-label="Open navigation menu">
+        <span class="bar bar-1" aria-hidden="true"></span>
+        <span class="bar bar-2" aria-hidden="true"></span>
+        <span class="bar bar-3" aria-hidden="true"></span>
+      </button>
+    </nav>
+
+    <div class="spacer" aria-hidden="true"></div>
+
+    <header class="home-hero">
+      <h1 class="home-hero__heading">Hello, my name is Cameron Remesz.</h1>
+      <p class="home-hero__copy">
+        I'm a JavaScript web developer focused on solving business problems.
+      </p>
+      <p class="home-hero__copy">Based in Calgary, Alberta.</p>
+    </header>
+
+    <main class="projects">
+      <div class="project-container project-container-1">
+        <img
+          src="https://picsum.photos/1000/800"
+          alt=""
+          class="project-container__img"
+        />
+        <div class="project-container__overlay">
+          <h2 class="project-container__overlay--title">Arora</h2>
+          <ul class="project-container__overlay--stack">
+            <li class="stack-item">HTML</li>
+            <li class="stack-item">CSS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container project-container-2">
+        <img
+          src="https://picsum.photos/1000/800"
+          alt=""
+          class="project-container__img"
+        />
+        <div class="project-container__overlay">
+          <h2 class="project-container__overlay--title">Bar One</h2>
+          <ul class="project-container__overlay--stack">
+            <li class="stack-item">HTML</li>
+            <li class="stack-item">Sass</li>
+            <li class="stack-item">Javascript</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container project-container-3">
+        <img
+          src="https://picsum.photos/1000/800"
+          alt=""
+          class="project-container__img"
+        />
+        <div class="project-container__overlay">
+          <h2 class="project-container__overlay--title">
+            Global Weather Watch
+          </h2>
+          <ul class="project-container__overlay--stack">
+            <li class="stack-item">HTML</li>
+            <li class="stack-item">CSS</li>
+            <li class="stack-item">jQuery</li>
+            <li class="stack-item">Open Weather Map API</li>
+            <li class="stack-item">Unsplash API</li>
+            <li class="stack-item">Mapbox API</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container project-container-4">
+        <img
+          src="https://picsum.photos/1000/800"
+          alt=""
+          class="project-container__img"
+        />
+        <div class="project-container__overlay">
+          <h2 class="project-container__overlay--title">Chatter</h2>
+          <ul class="project-container__overlay--stack">
+            <li class="stack-item">React</li>
+            <li class="stack-item">Sass</li>
+            <li class="stack-item">Firebase Auth</li>
+            <li class="stack-item">Firebase Realtime Database</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"> 
+    <div class="copyright">
+      <p class="copyright__copy">&copy;2021 Cameron Remesz | Created at <span><a href="https://junocollege.com/" target="_blank" >Juno College of Technology</a></span></p>
     </div>
-    <!-- DATE -->
-    <div class="date">
-      <p class="date__copy">Thursday Oct 2, 2:15PM</p>
+
+    <div class="email">
+      <p class="email__copy"><a href="mailto:cameron.remesz@gmail.com">cameron.remesz@gmail.com</a></p>
     </div>
-    <!-- MENU -->
-    <button class="navicon" aria-label="Open navigation menu">
-      <span class="bar bar-1" aria-hidden="true"></span>
-      <span class="bar bar-2" aria-hidden="true"></span>
-      <span class="bar bar-3" aria-hidden="true"></span>
-    </button>
-  </nav>
 
-  <div class="spacer" aria-hidden="true"></div>
+    
+    <ul class="social">
+      <li><a href="https://github.com/lowkeycode" target="_blank"><i class="fab fa-github"></i><span class="sr-only">Git Hub</span></a></li>
+      <li><a href="https://www.linkedin.com/in/cameron-remesz-9743141a6/" target="_blank"><i class="fab fa-linkedin-in"></i></i><span class="sr-only">Linked In</span></a></li>
+      <li><a href="https://twitter.com/lowkeycoding"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
 
-  <header class="home-hero">
-    <h1 class="home-hero__heading">Hello, my name is Cameron Remesz.</h1>
-    <p class="home-hero__copy">I'm a JavaScript web developer focused on solving business problems.</p>
-    <p class="home-hero__copy">Based in Calgary, Alberta.</p>
-  </header>
-
-  <main class="projects">
-    Projects
-  </main>
-
-  <footer class="footer">
-    Footer
+      <!--! This is how you link your resume when its finished <a target="_blank" href="/resources/cameron-remesz-resume.pdf"></a> -->
+      <li><a href="" target="_blank"><i class="far fa-file"></i></i><span class="sr-only">Cameron Remesz Resume download</span></a></li>
+    </ul>
   </footer>
-
-</body>
+  </body>
 </html>

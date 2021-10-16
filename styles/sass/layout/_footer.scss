@@ -1,4 +1,63 @@
 .footer {
-  background: purple;
   grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .copyright {
+    &__copy {
+      & a:link,
+      a:visited {
+        color: $color-black;
+        transition: all 0.2s;
+      }
+
+      & a:hover,
+      a:focus {
+        color: $color-blue;
+      }
+
+      & > span {
+        display: block;
+      }
+    }
+  }
+
+  & .email {
+    & a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-black;
+      transition: all 0.2s;
+    }
+
+    & a:hover,
+    a:focus {
+      color: $color-blue;
+    }
+  }
+
+  & .social {
+    width: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    & .fab,
+    .far {
+      font-size: $fs-sml;
+    }
+
+    & a:link,
+    a:visited {
+      color: $color-black;
+      transition: all 0.2s;
+    }
+
+    & a:hover,
+    a:focus {
+      color: $color-blue;
+    }
+  }
 }
