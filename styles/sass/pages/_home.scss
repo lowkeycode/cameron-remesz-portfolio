@@ -3,7 +3,22 @@
 }
 
 .home-hero {
-  grid-column: 1 / -1;
+  grid-column: 2 / -2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $space-lrg;
+
+  & > * {
+    font-size: $fs-big;
+    font-weight: 700;
+    line-height: 55px;
+  }
+
+  & p:first-of-type {
+    margin: $space-sml 0;
+  }
 }
 
 .projects {
