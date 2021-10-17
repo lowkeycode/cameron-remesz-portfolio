@@ -449,6 +449,7 @@ body.home {
 .project-container {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .project-container__img {
   width: 100%;
@@ -456,6 +457,8 @@ body.home {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 .project-container__overlay {
   position: absolute;
@@ -499,6 +502,11 @@ body.home {
   margin: 0.6rem 0;
 }
 
-.project-container:hover > .project-container__overlay {
+.project-container:hover .project-container__overlay {
   opacity: 1;
+}
+
+.project-container:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
