@@ -383,22 +383,25 @@ body.home {
   height: 3px;
   width: 35px;
   background: #090909;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .nav .navicon .bar-2 {
   margin: 8px 0;
-  opacity: 0;
+  opacity: 1;
 }
-.nav .navicon .active.bar-1 {
-  -webkit-animation: topBarDown 0.3s forwards;
-          animation: topBarDown 0.3s forwards;
+.nav .navicon.active .bar-1 {
+  -webkit-animation: topBarDown 0.2s forwards;
+          animation: topBarDown 0.2s forwards;
   height: 4px;
   background: #004c72;
 }
-.nav .navicon .active.bar-3 {
-  -webkit-animation: bottomBarUp 0.3s forwards;
-          animation: bottomBarUp 0.3s forwards;
+.nav .navicon.active .bar-2 {
+  opacity: 0;
+}
+.nav .navicon.active .bar-3 {
+  -webkit-animation: bottomBarUp 0.2s forwards;
+          animation: bottomBarUp 0.2s forwards;
   height: 4px;
   background: #004c72;
 }

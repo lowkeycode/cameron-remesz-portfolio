@@ -31,22 +31,26 @@
       height: 3px;
       width: 35px;
       background: $color-black;
-      transition: all .5s ease;
+      transition: all .2s;
     }
     
     & .bar-2 {
       margin: 8px 0;
-      opacity: 0;
+      opacity: 1;
     }
 
-    & .active.bar-1 {
-      animation: topBarDown .3s forwards;
+    &.active .bar-1 {
+      animation: topBarDown .2s forwards;
       height: 4px;
       background: $color-blue;
     }
 
-    & .active.bar-3 {
-      animation: bottomBarUp .3s forwards;
+    &.active .bar-2 {
+      opacity: 0;
+    }
+
+    &.active .bar-3 {
+      animation: bottomBarUp .2s forwards;
       height: 4px;
       background: $color-blue;
     }
