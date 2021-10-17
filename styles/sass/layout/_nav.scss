@@ -20,11 +20,15 @@
   }
 
   .navicon {
-    width: 45px;
-    height: 45px;
+    width: min-content;
+    height: min-content;
     border: none;
     background: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     & .bar {
       display: block;
@@ -40,7 +44,8 @@
     }
 
     &.active .bar-1 {
-      animation: topBarDown .2s forwards;
+      // animation: topBarDown .2s forwards;
+      transform: rotate(45deg) translate(9px, 8px);
       height: 4px;
       background: $color-blue;
     }
@@ -50,9 +55,10 @@
     }
 
     &.active .bar-3 {
-      animation: bottomBarUp .2s forwards;
+      // animation: bottomBarUp .2s forwards;
       height: 4px;
       background: $color-blue;
+      transform: rotate(-45deg) translate(8px, -8px);
     }
   }
 }
