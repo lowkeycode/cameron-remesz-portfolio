@@ -1,3 +1,59 @@
+@-webkit-keyframes topBarDown {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) translate(9px, 8px);
+            transform: rotate(45deg) translate(9px, 8px);
+  }
+}
+@keyframes topBarDown {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) translate(9px, 8px);
+            transform: rotate(45deg) translate(9px, 8px);
+  }
+}
+@-webkit-keyframes bottomBarUp {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-11px);
+            transform: translateY(-11px);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(8px, -8px);
+            transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
+@keyframes bottomBarUp {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-11px);
+            transform: translateY(-11px);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(8px, -8px);
+            transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -325,11 +381,26 @@ body.home {
 .nav .navicon .bar {
   display: block;
   height: 3px;
-  width: 40px;
+  width: 35px;
   background: #090909;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .nav .navicon .bar-2 {
   margin: 8px 0;
+  opacity: 0;
+}
+.nav .navicon .active.bar-1 {
+  -webkit-animation: topBarDown 0.3s forwards;
+          animation: topBarDown 0.3s forwards;
+  height: 4px;
+  background: #004c72;
+}
+.nav .navicon .active.bar-3 {
+  -webkit-animation: bottomBarUp 0.3s forwards;
+          animation: bottomBarUp 0.3s forwards;
+  height: 4px;
+  background: #004c72;
 }
 
 .footer {
