@@ -457,8 +457,8 @@ body.home {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  -webkit-transition: all 2.7s;
+  transition: all 2.7s;
 }
 .project-container__overlay {
   position: absolute;
