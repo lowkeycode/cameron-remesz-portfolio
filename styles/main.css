@@ -302,7 +302,7 @@ body.home {
           align-items: center;
   padding: 1.2rem 3.2rem 1.2rem 3.2rem;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 .nav .logo {
   width: 4.5rem;
@@ -460,7 +460,7 @@ body.home {
   position: fixed;
   right: 3.2rem;
   top: 3.2rem;
-  z-index: 4;
+  z-index: 3;
 }
 .navicon .bar {
   display: block;
@@ -565,6 +565,7 @@ body.home {
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
