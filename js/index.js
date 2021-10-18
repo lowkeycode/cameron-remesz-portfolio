@@ -9,15 +9,15 @@ const toggleOverlay = () => {
     menuOpen = true;
 
     menu.ariaHidden = false;
+    menu.classList.remove('pointer-event-none');
   } else {
     menuOpen = false;
 
     menu.ariaHidden = true;
+    menu.classList.add('pointer-event-none');
   }
   
   menu.classList.toggle("open");
-
-
 };
 
 const toggleNavBtn = () => {
