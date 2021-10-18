@@ -300,9 +300,6 @@ body.home {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 1.2rem 3.2rem 1.2rem 3.2rem;
   position: fixed;
   z-index: 1;
@@ -314,57 +311,6 @@ body.home {
 }
 .nav .logo img {
   max-width: 100%;
-}
-.nav .navicon {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  border: none;
-  background: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.nav .navicon .bar {
-  display: block;
-  height: 3px;
-  width: 35px;
-  background: #090909;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.nav .navicon .bar-2 {
-  margin: 8px 0;
-  opacity: 1;
-}
-.nav .navicon.active .bar-1 {
-  -webkit-transform: rotate(45deg) translate(9px, 8px);
-          transform: rotate(45deg) translate(9px, 8px);
-  height: 4px;
-  background: #0079b6;
-}
-.nav .navicon.active .bar-2 {
-  opacity: 0;
-}
-.nav .navicon.active .bar-3 {
-  height: 4px;
-  background: #0079b6;
-  -webkit-transform: rotate(-45deg) translate(8px, -8px);
-          transform: rotate(-45deg) translate(8px, -8px);
 }
 
 .footer {
@@ -442,6 +388,9 @@ body.home {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 .menu-overlay__list {
   list-style: none;
@@ -474,6 +423,66 @@ body.home {
 .menu-overlay__list a:hover,
 .menu-overlay__list a:focus {
   color: #0079b6;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+}
+
+.navicon {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 3.2rem;
+  top: 3.2rem;
+  z-index: 4;
+}
+.navicon .bar {
+  display: block;
+  height: 3px;
+  width: 35px;
+  background: #090909;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.navicon .bar-2 {
+  margin: 8px 0;
+  opacity: 1;
+}
+.navicon.active .bar-1 {
+  -webkit-transform: rotate(45deg) translate(9px, 8px);
+          transform: rotate(45deg) translate(9px, 8px);
+  height: 4px;
+  background: #ffffff;
+}
+.navicon.active .bar-2 {
+  opacity: 0;
+}
+.navicon.active .bar-3 {
+  height: 4px;
+  background: #ffffff;
+  -webkit-transform: rotate(-45deg) translate(8px, -8px);
+          transform: rotate(-45deg) translate(8px, -8px);
 }
 
 .spacer {

@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: all 0.4s;
 
   &__list {
     list-style: none;
@@ -25,7 +27,7 @@
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 1px;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
     & a:hover,
@@ -33,4 +35,8 @@
       color: $color-blue;
     }
   }
+}
+
+.menu-overlay.open {
+  opacity: 1;
 }
