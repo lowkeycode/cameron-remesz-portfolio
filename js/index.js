@@ -1,8 +1,23 @@
 const navicon = document.querySelector(".navicon");
 const menu = document.querySelector(".menu-overlay");
 
+let menuOpen = false;
+
 const toggleOverlay = () => {
+
+  if(!menuOpen) {
+    menuOpen = true;
+
+    menu.ariaHidden = false;
+  } else {
+    menuOpen = false;
+
+    menu.ariaHidden = true;
+  }
+  
   menu.classList.toggle("open");
+
+
 };
 
 const toggleNavBtn = () => {
