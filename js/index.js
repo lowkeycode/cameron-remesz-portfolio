@@ -1,19 +1,14 @@
-const navicon = document.querySelector('.navicon');
+const navicon = document.querySelector(".navicon");
+const menu = document.querySelector(".menu-overlay");
 
-let naviconOpen = false;
-
+const toggleOverlay = () => {
+  menu.classList.toggle("open");
+};
 
 const toggleNavBtn = () => {
-  if(!naviconOpen) {
-    navicon.classList.add('active');
-    naviconOpen = true;
-  } else {
-    navicon.classList.remove('active');
-    naviconOpen = false;
-  }
-}
+  navicon.classList.toggle("active");
 
+  toggleOverlay();
+};
 
-
-
-navicon.addEventListener('click', toggleNavBtn);
+navicon.addEventListener("click", toggleNavBtn);

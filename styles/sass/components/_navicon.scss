@@ -1,0 +1,47 @@
+.navicon {
+  width: min-content;
+  height: min-content;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: $space-lrg;
+  top: $space-lrg;
+  z-index: 4;
+
+
+  & .bar {
+    display: block;
+    height: 3px;
+    width: 35px;
+    background: $color-black;
+    transition: all .2s;
+  }
+  
+  & .bar-2 {
+    margin: 8px 0;
+    opacity: 1;
+  }
+
+  &.active .bar-1 {
+    // animation: topBarDown .2s forwards;
+    transform: rotate(45deg) translate(9px, 8px);
+    height: 4px;
+    background: $color-white;
+  }
+
+  &.active .bar-2 {
+    opacity: 0;
+  }
+
+  &.active .bar-3 {
+    // animation: bottomBarUp .2s forwards;
+    height: 4px;
+    background: $color-white;
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
