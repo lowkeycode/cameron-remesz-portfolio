@@ -17,7 +17,6 @@ const toggleOverlay = () => {
   
   menu.classList.toggle("open");
 
-
 };
 
 const toggleNavBtn = () => {

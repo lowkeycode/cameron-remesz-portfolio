@@ -23,7 +23,6 @@
 }
 
 // HOME PROJECTS
-// todo
 .projects {
   grid-column: 1 / -1;
 
@@ -53,7 +52,7 @@
 .project-container {
   position: relative;
   cursor: pointer;
-  overflow: hidden;
+  // overflow: hidden;
 
   &__img {
     width: 100%;

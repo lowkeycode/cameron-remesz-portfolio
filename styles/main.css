@@ -389,7 +389,6 @@ body.home {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
-  z-index: -1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -431,7 +430,7 @@ body.home {
 }
 
 .menu-overlay.open {
-  z-index: 1;
+  z-index: 2;
   opacity: 1;
 }
 
@@ -545,7 +544,6 @@ body.home {
 .project-container {
   position: relative;
   cursor: pointer;
-  overflow: hidden;
 }
 .project-container__img {
   width: 100%;
