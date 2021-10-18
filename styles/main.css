@@ -426,6 +426,10 @@ body.home {
   color: #61caff;
 }
 
+.home .menu-overlay__list--item:nth-of-type(1) a {
+  color: #61caff;
+}
+
 .menu-overlay.open {
   z-index: 1;
   opacity: 1;
