@@ -544,6 +544,7 @@ body.home {
 .project-container {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .project-container__img {
   width: 100%;
