@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
+  z-index: -1;
   transition: all 0.4s;
 
   &__list {
@@ -38,5 +39,6 @@
 }
 
 .menu-overlay.open {
+  z-index: 1;
   opacity: 1;
 }
