@@ -8,8 +8,8 @@ body.home {
 
 // ABOUT
 body.about {
-}
-
-// CONTACT
-body.contact {
+  display: grid;
+  grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+  grid-template-rows: 20vh repeat(2, min-content) 30vh;
+  position: relative;
 }

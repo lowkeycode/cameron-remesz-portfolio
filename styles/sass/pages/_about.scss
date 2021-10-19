@@ -1,0 +1,10 @@
+.about-header {
+  grid-column: 1 / -1;
+  
+  padding: $space-lrg;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: $color-grey;
+}
