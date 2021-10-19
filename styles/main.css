@@ -282,6 +282,16 @@ h1 {
   margin: 0;
 }
 
+*::-moz-selection {
+  background: #61caff;
+  color: #ffffff;
+}
+
+*::selection {
+  background: #61caff;
+  color: #ffffff;
+}
+
 body.home {
   display: grid;
   grid-template-columns: 2fr repeat(10, 1fr) 2fr;
