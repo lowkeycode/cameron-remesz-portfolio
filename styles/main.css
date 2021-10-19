@@ -448,6 +448,10 @@ body.about {
   color: #61caff;
 }
 
+.about .menu-overlay__list--item:nth-of-type(2) a {
+  color: #61caff;
+}
+
 .pointer-event-none {
   pointer-events: none;
 }
@@ -643,4 +647,12 @@ body.about {
   text-transform: uppercase;
   letter-spacing: 2px;
   background: #F7F7F7;
+}
+
+.profile {
+  grid-column: 2/-2;
+  height: 1000px;
+  border: 1px solid red;
+  background: grey;
+  margin: 4.8rem 0 2rem 0;
 }
