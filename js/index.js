@@ -7,11 +7,13 @@ const toggleOverlay = () => {
   if (!menuOpen) {
     menuOpen = true;
 
+    navicon.ariaExpanded = "true"
     menu.ariaHidden = false;
     menu.classList.remove("pointer-event-none");
   } else {
     menuOpen = false;
 
+    navicon.ariaExpanded = "false"
     menu.ariaHidden = true;
     menu.classList.add("pointer-event-none");
   }
