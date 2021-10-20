@@ -1,3 +1,4 @@
+// HEADER
 .about-header {
   grid-column: 1 / -1;
 
@@ -13,13 +14,13 @@
   }
 }
 
+// PROFILE
 .profile {
   grid-column: 2 / -2;
   margin: $space-xl 0 $space-med 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 
   &__pic {
     width: 22rem;
