@@ -4,19 +4,18 @@ const menu = document.querySelector(".menu-overlay");
 let menuOpen = false;
 
 const toggleOverlay = () => {
-
-  if(!menuOpen) {
+  if (!menuOpen) {
     menuOpen = true;
 
     menu.ariaHidden = false;
-    menu.classList.remove('pointer-event-none');
+    menu.classList.remove("pointer-event-none");
   } else {
     menuOpen = false;
 
     menu.ariaHidden = true;
-    menu.classList.add('pointer-event-none');
+    menu.classList.add("pointer-event-none");
   }
-  
+
   menu.classList.toggle("open");
 };
 

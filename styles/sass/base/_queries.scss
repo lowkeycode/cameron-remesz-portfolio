@@ -1,13 +1,10 @@
 $bp-xxl: 77.19em; /* 1235px */
 $bp-xl: 64em; /* 1024px */
 $bp-lrg: 48em; /* 768px */
-$bp-med: 26.56em;
-
-
+$bp-med: 26.56em; /* 425px */
 
 @media only screen and (max-width: $bp-xxl) {
   body.about {
-
     & .profile {
       justify-content: center;
 
@@ -16,7 +13,6 @@ $bp-med: 26.56em;
         padding-right: 0;
         padding-bottom: $space-sml;
         justify-content: center;
-
       }
 
       &__bio {
@@ -33,7 +29,7 @@ $bp-med: 26.56em;
 }
 
 @media only screen and (max-width: $bp-xl) {
-  .footer {
+  & .footer {
     flex-direction: column;
     padding: $space-xs $space-xs $space-sml $space-xs;
 
@@ -50,9 +46,9 @@ $bp-med: 26.56em;
       width: 60%;
 
       & .fab,
-    .far {
-      font-size: $fs-med;
-    }
+      .far {
+        font-size: $fs-med;
+      }
     }
   }
 }
@@ -66,11 +62,10 @@ $bp-med: 26.56em;
     & a:link,
     a:visited {
       font-size: $fs-med;
-    }    
+    }
   }
 
   body.home {
-
     & .home-hero {
       padding: $space-lrg 0 $space-lrg 0;
 
@@ -78,7 +73,7 @@ $bp-med: 26.56em;
         font-size: $fs-med;
         line-height: 35px;
       }
-    } 
+    }
 
     & .projects {
       grid-template-columns: 1fr;
