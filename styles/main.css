@@ -655,16 +655,12 @@ body.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.profile > * {
+  padding: 1.2rem;
 }
 .profile__pic {
-  width: 80%;
+  width: 50%;
 }
 .profile__pic--img {
   max-width: 100%;
@@ -673,7 +669,18 @@ body.about {
 .profile__bio {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: 3.2rem 0 2rem 0;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .profile__bio--heading {
   text-transform: uppercase;
