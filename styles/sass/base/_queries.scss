@@ -29,7 +29,7 @@ $bp-med: 26.56em; /* 425px */
 }
 
 @media only screen and (max-width: $bp-xl) {
-  & .footer {
+  .footer {
     flex-direction: column;
     padding: $space-xs $space-xs $space-sml $space-xs;
 
