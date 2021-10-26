@@ -295,8 +295,8 @@ h1 {
 body.home {
   display: grid;
   grid-template-columns: 2fr repeat(10, 1fr) 2fr;
-  grid-template-rows: 8rem repeat(2, -webkit-min-content) 30vh;
-  grid-template-rows: 8rem repeat(2, min-content) 30vh;
+  grid-template-rows: 8rem repeat(3, -webkit-min-content) 30vh;
+  grid-template-rows: 8rem repeat(3, min-content) 30vh;
   position: relative;
 }
 
@@ -531,7 +531,7 @@ body.about {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3.2rem 3.2rem 8rem 3.2rem;
+  padding: 3.2rem 3.2rem 4.8rem 3.2rem;
 }
 .home-hero > * {
   font-size: 2.074rem;
@@ -540,6 +540,21 @@ body.about {
 }
 .home-hero p:first-of-type {
   margin: 1.2rem 0;
+}
+
+.projects-heading {
+  grid-column: 1/-1;
+  padding: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F7F7F7;
+  font-size: 2.074rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .projects {
@@ -816,6 +831,9 @@ body.about {
   body.home .home-hero > * {
     font-size: 1.44rem;
     line-height: 35px;
+  }
+  body.home .projects-heading {
+    font-size: 1.44rem;
   }
   body.home .projects {
     grid-template-columns: 1fr;

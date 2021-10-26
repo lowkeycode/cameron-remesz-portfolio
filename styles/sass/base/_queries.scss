@@ -75,6 +75,10 @@ $bp-med: 26.56em; /* 425px */
       }
     }
 
+    & .projects-heading {
+      font-size: $fs-med;
+    }
+
     & .projects {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 50vw);
