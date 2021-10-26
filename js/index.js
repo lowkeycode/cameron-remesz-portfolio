@@ -1,6 +1,8 @@
 const navicon = document.querySelector(".navicon");
 const menu = document.querySelector(".menu-overlay");
 
+
+// Overlay/Nav Menu Toggle
 let menuOpen = false;
 
 const toggleOverlay = () => {
@@ -26,5 +28,6 @@ const toggleNavBtn = () => {
 
   toggleOverlay();
 };
+
 
 navicon.addEventListener("click", toggleNavBtn);

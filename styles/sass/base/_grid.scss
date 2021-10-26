@@ -2,7 +2,7 @@
 body.home {
   display: grid;
   grid-template-columns: 2fr repeat(10, 1fr) 2fr;
-  grid-template-rows: 20vh repeat(2, min-content) 30vh;
+  grid-template-rows: 8rem repeat(2, min-content) 30vh;
   position: relative;
 }
 
