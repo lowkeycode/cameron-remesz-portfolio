@@ -105,12 +105,20 @@ $bp-med: 26.56em; /* 425px */
         font-size: $fs-med;
       }
     }
+
+    .skills__item {
+      width: 5rem;
+    }
   }
 }
 
 @media only screen and (max-width: $bp-med) {
   body.home,
   body.about {
-    grid-template-rows: 20vh repeat(2, min-content) 40vh;
+    grid-template-rows: 20vh repeat(3, min-content) 40vh;
+
+    .skills__item {
+      width: 30%;
+    }
   }
 }

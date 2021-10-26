@@ -62,3 +62,36 @@
     }
   }
 }
+
+// SKILLS
+
+.skills {
+  grid-column: 2 / -2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: $space-med 0;
+
+
+  &__item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: $space-xs;
+    transition: all .2s;
+
+    &:hover {
+      color: $color-blue;
+    }
+
+    &--img {
+      width: 2rem;
+    }
+
+    &--skill {
+      text-align: center;
+    }
+  }
+}
