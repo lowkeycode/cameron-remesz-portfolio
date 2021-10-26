@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: $space-lrg $space-lrg $space-huge $space-lrg;
+  padding: $space-lrg $space-lrg $space-xl $space-lrg;
 
   & > * {
     font-size: $fs-big;
@@ -21,6 +21,19 @@
   & p:first-of-type {
     margin: $space-sml 0;
   }
+}
+
+// WORKS HEADING
+.projects-heading {
+  grid-column: 1 / -1;
+
+  padding: $space-lrg;
+  display: flex;
+  justify-content: center;
+  background: $color-grey;
+  font-size: $fs-big;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 // HOME PROJECTS
