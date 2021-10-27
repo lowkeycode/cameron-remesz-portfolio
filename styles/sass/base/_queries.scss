@@ -101,8 +101,18 @@ $bp-med: 26.56em; /* 425px */
         grid-row: 4 / 5;
       }
     }
-  }
 
+    & .project-container__overlay {
+      &--title {
+        font-size: $fs-sml;
+      }
+    }
+
+    .stack-item {
+      font-size: $fs-xs;
+    }
+  }
+  
   body.about {
     .about-header {
       &__heading {
@@ -117,9 +127,24 @@ $bp-med: 26.56em; /* 425px */
 }
 
 @media only screen and (max-width: $bp-med) {
+  body.home {
+    & .project-container__overlay {
+      &--title {
+        margin-bottom: 0;
+      }
+      
+    }
+
+    .stack-item {
+      margin: 4px 0;
+    }
+  }
+
   body.home,
   body.about {
     grid-template-rows: 20vh repeat(3, min-content) 40vh;
+
+    
 
     .skills__item {
       width: 30%;

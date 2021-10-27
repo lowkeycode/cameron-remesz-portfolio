@@ -628,6 +628,7 @@ body.about {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
+  text-align: center;
 }
 .project-container__overlay--stack {
   list-style: none;
@@ -635,6 +636,7 @@ body.about {
 }
 .project-container__overlay--stack li {
   margin: 0.6rem 0;
+  text-align: center;
 }
 
 .project-container:hover .project-container__overlay {
@@ -855,6 +857,12 @@ body.about {
     grid-column: 1/2;
     grid-row: 4/5;
   }
+  body.home .project-container__overlay--title {
+    font-size: 1.2rem;
+  }
+  body.home .stack-item {
+    font-size: 1rem;
+  }
 
   body.about .about-header__heading {
     font-size: 1.44rem;
@@ -864,6 +872,13 @@ body.about {
   }
 }
 @media only screen and (max-width: 26.56em) {
+  body.home .project-container__overlay--title {
+    margin-bottom: 0;
+  }
+  body.home .stack-item {
+    margin: 4px 0;
+  }
+
   body.home,
 body.about {
     grid-template-rows: 20vh repeat(3, -webkit-min-content) 40vh;
