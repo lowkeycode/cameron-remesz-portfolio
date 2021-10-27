@@ -102,6 +102,8 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-bottom: $space-xs;
+      text-align: center;
+
     }
 
     &--stack {
@@ -110,6 +112,7 @@
 
       & li {
         margin: $space-xs 0;
+        text-align: center;
       }
     }
   }
