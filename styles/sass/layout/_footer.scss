@@ -6,8 +6,15 @@
   align-items: center;
   z-index: 1;
 
+  & > * {
+    width: 15rem;
+  }
+
   & .copyright {
     &__copy {
+      text-align: center;
+      font-size: .8rem;
+
       & a:link,
       a:visited {
         color: $color-black;
@@ -40,7 +47,6 @@
   }
 
   & .social {
-    width: 20%;
     list-style: none;
     display: flex;
     justify-content: space-between;

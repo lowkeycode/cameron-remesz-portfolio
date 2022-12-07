@@ -344,6 +344,13 @@ body.about {
           align-items: center;
   z-index: 1;
 }
+.footer > * {
+  width: 15rem;
+}
+.footer .copyright__copy {
+  text-align: center;
+  font-size: 0.8rem;
+}
 .footer .copyright__copy a:link,
 .footer .copyright__copy a:visited {
   color: #090909;
@@ -369,7 +376,6 @@ body.about {
   color: #61caff;
 }
 .footer .social {
-  width: 20%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +567,7 @@ body.about {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(4, 30vw);
+  grid-template-rows: repeat(2, 30vw);
 }
 .projects .project-container-1 {
   grid-column: 1/2;
@@ -578,22 +584,6 @@ body.about {
 .projects .project-container-4 {
   grid-column: 2/-1;
   grid-row: 2/3;
-}
-.projects .project-container-5 {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-.projects .project-container-6 {
-  grid-column: 2/-1;
-  grid-row: 3/4;
-}
-.projects .project-container-7 {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-.projects .project-container-8 {
-  grid-column: 2/-1;
-  grid-row: 4/5;
 }
 
 .project-container {
@@ -837,12 +827,10 @@ body.about {
   html {
     font-size: 112%;
   }
-
   .menu-overlay__list a:link,
 .menu-overlay__list a:visited {
     font-size: 1.44rem;
   }
-
   body.home .home-hero {
     padding: 3.2rem 0 3.2rem 0;
   }
@@ -895,7 +883,6 @@ body.about {
   body.home .stack-item {
     font-size: 1rem;
   }
-
   body.about .about-header__heading {
     font-size: 1.44rem;
   }
@@ -910,7 +897,6 @@ body.about {
   body.home .stack-item {
     margin: 4px 0;
   }
-
   body.home,
 body.about {
     grid-template-rows: 20vh repeat(3, -webkit-min-content) 40vh;
