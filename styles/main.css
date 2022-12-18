@@ -331,6 +331,21 @@ body.about {
 .nav .logo img {
   max-width: 100%;
 }
+.nav svg {
+  margin: 0 auto;
+  width: 30%;
+  height: 115%;
+  top: -17%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+}
+.nav svg path {
+  stroke-dashoffset: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
 
 .footer {
   grid-column: 1/-1;

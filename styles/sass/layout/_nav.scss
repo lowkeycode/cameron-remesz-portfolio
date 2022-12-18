@@ -18,4 +18,21 @@
       max-width: 100%;
     }
   }
+
+  & svg {
+    margin: 0 auto;
+    width: 30%;
+    height: 115%;
+    top: -17%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  & svg path {
+    stroke-dashoffset: 0;
+    transition: all 2s;
+  }
 }
+
+

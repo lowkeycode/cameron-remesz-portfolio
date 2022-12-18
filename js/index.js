@@ -29,5 +29,28 @@ const toggleNavBtn = () => {
   toggleOverlay();
 };
 
+// SVG
+const paths = document.querySelectorAll('path');
 
+
+const fillSvgPaths = () => {
+  let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+
+  paths.forEach((path) => {
+    const pathLength = path.getTotalLength();
+
+    path.style.strokeDasharray = pathLength;
+    path.style.strokeDashoffset = pathLength;
+
+    const drawLength = pathLength * scrollPercentage;
+
+    path.style.strokeDashoffset = pathLength - drawLength;
+  })
+}
+
+fillSvgPaths();
+
+
+document.addEventListener("scroll", fillSvgPaths);
 navicon.addEventListener("click", toggleNavBtn);
