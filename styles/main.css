@@ -317,7 +317,7 @@ body.about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+  padding: 1.2rem 3.2rem;
   z-index: 2;
   position: sticky;
   top: 0;
@@ -916,6 +916,23 @@ body.about {
 body.about {
     grid-template-rows: 20vh repeat(3, -webkit-min-content) 40vh;
     grid-template-rows: 20vh repeat(3, min-content) 40vh;
+  }
+  body.home .nav,
+body.about .nav {
+    padding: 1.2rem;
+  }
+  body.home .nav .logo,
+body.about .nav .logo {
+    width: 4rem;
+  }
+  body.home .nav svg,
+body.about .nav svg {
+    left: 52%;
+  }
+  body.home .navicon,
+body.about .navicon {
+    right: 2rem;
+    top: 2rem;
   }
   body.home .skills__item,
 body.about .skills__item {

@@ -159,7 +159,24 @@ $bp-med: 26.56em; /* 425px */
   body.about {
     grid-template-rows: 20vh repeat(3, min-content) 40vh;
 
-    .skills__item {
+    & .nav {
+      padding: $space-sml;
+
+      & .logo {
+        width: 4rem;
+      }
+
+      & svg {
+        left: 52%;
+      }
+    }
+
+    & .navicon {
+      right: $space-med;
+      top: $space-med;
+    }
+
+    & .skills__item {
       width: 30%;
     }
   }
