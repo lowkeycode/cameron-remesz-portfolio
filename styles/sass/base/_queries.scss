@@ -81,7 +81,7 @@ $bp-med: 26.56em; /* 425px */
 
     & .projects {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(8, 50vw);
+      grid-template-rows: repeat(4, 50vw);
 
       & .project-container-1 {
         grid-column: 1 / 2;
@@ -99,22 +99,6 @@ $bp-med: 26.56em; /* 425px */
       & .project-container-4 {
         grid-column: 1 / 2;
         grid-row: 4 / 5;
-      }
-      & .project-container-5 {
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-      }
-      & .project-container-6 {
-        grid-column: 1 / 2;
-        grid-row: 6 / 7;
-      }
-      & .project-container-7 {
-        grid-column: 1 / 2;
-        grid-row: 7 / 8;
-      }
-      & .project-container-8 {
-        grid-column: 1 / 2;
-        grid-row: 8 / -1;
       }
     }
 
