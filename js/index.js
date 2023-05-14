@@ -52,5 +52,12 @@ const fillSvgPaths = () => {
 fillSvgPaths();
 
 
+// Year
+const yearEl = document.querySelector('.year');
+const currentYear = new Date(Date.now()).getFullYear();
+
+yearEl.innerHTML = `&copy; ${currentYear}`;
+
+// Event Listeners
 document.addEventListener("scroll", fillSvgPaths);
 navicon.addEventListener("click", toggleNavBtn);

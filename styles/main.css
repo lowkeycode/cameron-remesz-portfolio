@@ -376,7 +376,7 @@ body.about {
 .footer .copyright__copy a:focus {
   color: #61caff;
 }
-.footer .copyright__copy > span {
+.footer .copyright__copy > .break {
   display: block;
 }
 .footer .email a:link,
@@ -834,7 +834,7 @@ body.about {
     width: 60%;
   }
   .footer .social .fab,
-.footer .social .far {
+  .footer .social .far {
     font-size: 1.44rem;
   }
 }
@@ -843,7 +843,7 @@ body.about {
     font-size: 112%;
   }
   .menu-overlay__list a:link,
-.menu-overlay__list a:visited {
+  .menu-overlay__list a:visited {
     font-size: 1.44rem;
   }
   body.home .home-hero {
@@ -897,29 +897,29 @@ body.about {
     margin: 4px 0;
   }
   body.home,
-body.about {
+  body.about {
     grid-template-rows: 20vh repeat(3, -webkit-min-content) 40vh;
     grid-template-rows: 20vh repeat(3, min-content) 40vh;
   }
   body.home .nav,
-body.about .nav {
+  body.about .nav {
     padding: 1.2rem;
   }
   body.home .nav .logo,
-body.about .nav .logo {
+  body.about .nav .logo {
     width: 4rem;
   }
   body.home .nav svg,
-body.about .nav svg {
+  body.about .nav svg {
     left: 52%;
   }
   body.home .navicon,
-body.about .navicon {
+  body.about .navicon {
     right: 2rem;
     top: 2rem;
   }
   body.home .skills__item,
-body.about .skills__item {
+  body.about .skills__item {
     width: 30%;
   }
 }
