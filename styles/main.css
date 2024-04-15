@@ -283,12 +283,12 @@ h1 {
 }
 
 *::-moz-selection {
-  background: #61caff;
+  background: #8BBFDA;
   color: #ffffff;
 }
 
 *::selection {
-  background: #61caff;
+  background: #8BBFDA;
   color: #ffffff;
 }
 
@@ -369,7 +369,7 @@ body.about {
 }
 .footer .copyright__copy a:hover,
 .footer .copyright__copy a:focus {
-  color: #61caff;
+  color: #8BBFDA;
 }
 .footer .copyright__copy > .break {
   display: block;
@@ -383,7 +383,7 @@ body.about {
 }
 .footer .email a:hover,
 .footer .email a:focus {
-  color: #61caff;
+  color: #8BBFDA;
 }
 .footer .social {
   list-style: none;
@@ -406,7 +406,7 @@ body.about {
 }
 .footer .social a:hover,
 .footer .social a:focus {
-  color: #61caff;
+  color: #8BBFDA;
 }
 
 .menu-overlay {
@@ -458,15 +458,15 @@ body.about {
 }
 .menu-overlay__list a:hover,
 .menu-overlay__list a:focus {
-  color: #61caff;
+  color: #8BBFDA;
 }
 
 .home .menu-overlay__list--item:nth-of-type(1) a {
-  color: #61caff;
+  color: #8BBFDA;
 }
 
 .about .menu-overlay__list--item:nth-of-type(2) a {
-  color: #61caff;
+  color: #8BBFDA;
 }
 
 .pointer-event-none {
@@ -803,7 +803,7 @@ body.about {
   transition: all 0.2s;
 }
 .skills__item:hover {
-  color: #61caff;
+  color: #8BBFDA;
 }
 .skills__item--img {
   width: 2rem;
