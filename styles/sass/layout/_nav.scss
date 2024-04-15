@@ -10,7 +10,7 @@
   left: 0;
 
   & .logo {
-    width: 4.5rem;
+    width: 5rem;
     border: 3px solid #000;
     padding: 0 10px;
 
@@ -27,11 +27,6 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-  }
-
-  & svg path {
-    stroke-dashoffset: 0;
-    transition: all 2s;
   }
 }
 

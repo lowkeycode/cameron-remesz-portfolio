@@ -1,6 +1,6 @@
 const navicon = document.querySelector(".navicon");
 const menu = document.querySelector(".menu-overlay");
-
+const svg = document.querySelector('.skyline');
 
 // Overlay/Nav Menu Toggle
 let menuOpen = false;
@@ -32,10 +32,8 @@ const toggleNavBtn = () => {
 // SVG
 const paths = document.querySelectorAll('path');
 
-
 const fillSvgPaths = () => {
   let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
 
   paths.forEach((path) => {
     const pathLength = path.getTotalLength();
@@ -46,11 +44,11 @@ const fillSvgPaths = () => {
     const drawLength = pathLength * scrollPercentage;
 
     path.style.strokeDashoffset = pathLength - drawLength;
-  })
+  });
 }
 
 fillSvgPaths();
-
+svg.style.opacity = 1;
 
 // Year
 const yearEl = document.querySelector('.year');
