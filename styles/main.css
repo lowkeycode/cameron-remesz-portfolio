@@ -577,9 +577,8 @@ body.about {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3, 30vw);
+  grid-template-rows: 35vw repeat(2, 25vw);
   gap: 0.5rem;
-  margin-top: -30vw;
 }
 .projects .project-container-0 {
   grid-column: 1/-1;
@@ -621,8 +620,8 @@ body.about {
           align-items: center;
 }
 .project-container .poorcast > div {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
 }
 .project-container .poorcast > div > img {
   width: 100%;
