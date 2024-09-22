@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   padding: $space-lrg $space-lrg $space-xl $space-lrg;
+  min-height: 63vh;
 
   & > * {
     font-size: $fs-big;
