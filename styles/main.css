@@ -842,6 +842,19 @@ body.resume {
 .resume h2 {
   margin-bottom: 0.25rem;
 }
+.resume h3 {
+  margin-bottom: 0.5rem;
+}
+.resume h3 span {
+  border-bottom: 1px solid grey;
+}
+.resume h3:first-of-type {
+  margin-top: unset;
+}
+.resume ul {
+  list-style: none;
+  padding: 0;
+}
 .resume .professional-experience__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,19 +873,6 @@ body.resume {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.resume h3 {
-  margin-bottom: 0.5rem;
-}
-.resume h3 span {
-  border-bottom: 1px solid grey;
-}
-.resume h3:first-of-type {
-  margin-top: unset;
-}
-.resume ul {
-  list-style: none;
-  padding: 0;
 }
 
 /* 1235px */
