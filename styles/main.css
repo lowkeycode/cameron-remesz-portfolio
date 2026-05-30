@@ -769,12 +769,6 @@ body.resume {
   font-weight: 600;
   letter-spacing: 2px;
 }
-.profile__bio--greeting {
-  font-style: italic;
-  font-weight: 300;
-  margin: 1.2rem 0;
-  line-height: 1.25;
-}
 .profile__bio--copy {
   line-height: 1.45;
 }
