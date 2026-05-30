@@ -24,13 +24,16 @@ const toggleOverlay = () => {
 };
 
 const toggleNavBtn = () => {
+  console.log('cleek')
   navicon.classList.toggle("active");
 
   toggleOverlay();
 };
 
 // SVG
-const paths = document.querySelector('path');
+const paths = document.querySelectorAll('.skyline path');
+
+console.log(paths)
 
 const fillSvgPaths = () => {
   let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
