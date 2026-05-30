@@ -1,6 +1,14 @@
 .resume {
   line-height: 1.4;
 
+  a {
+    color: $color-blue;
+  }
+
+  a:hover {
+    filter: brightness(0.62);
+  }
+
   & .download-container {
     display: flex;
     align-items: center;
@@ -15,6 +23,7 @@
       cursor: pointer;
 
       path {
+        stroke: black;
         transition: all 0.2s;
       }
     }
@@ -30,7 +39,7 @@
     grid-column: 1 / -1;
 
     background: $color-grey;
-    padding: 2rem;
+    padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;

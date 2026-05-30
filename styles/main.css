@@ -822,6 +822,13 @@ body.resume {
 .resume {
   line-height: 1.4;
 }
+.resume a {
+  color: #8BBFDA;
+}
+.resume a:hover {
+  -webkit-filter: brightness(0.62);
+          filter: brightness(0.62);
+}
 .resume .download-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,6 +848,7 @@ body.resume {
   cursor: pointer;
 }
 .resume .download-container__icon path {
+  stroke: black;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -850,7 +858,7 @@ body.resume {
 .resume main {
   grid-column: 1/-1;
   background: #F7F7F7;
-  padding: 2rem;
+  padding: 2rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
