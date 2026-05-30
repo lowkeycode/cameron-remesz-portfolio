@@ -30,7 +30,7 @@ const toggleNavBtn = () => {
 };
 
 // SVG
-const paths = document.querySelectorAll('path');
+const paths = document.querySelector('path');
 
 const fillSvgPaths = () => {
   let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);

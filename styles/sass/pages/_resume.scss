@@ -1,9 +1,29 @@
 .resume {
   line-height: 1.4;
 
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  & .download-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__icon {
+      cursor: pointer;
+
+      path {
+        transition: all 0.2s;
+      }
+    }
+
+    &__icon:hover {
+      path {
+        stroke: $color-blue;
+      }
+    }
   }
 
   main {
