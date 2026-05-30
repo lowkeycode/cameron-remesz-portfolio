@@ -49,8 +49,9 @@
   & .social {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
 
+    
     & .fab,
     .far {
       font-size: $fs-sml;
