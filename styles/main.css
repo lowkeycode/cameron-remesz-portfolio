@@ -768,6 +768,7 @@ body.resume {
   font-size: 1.44rem;
   font-weight: 600;
   letter-spacing: 2px;
+  margin-bottom: 2rem;
 }
 .profile__bio--copy {
   line-height: 1.45;
