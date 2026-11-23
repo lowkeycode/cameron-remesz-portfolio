@@ -106,18 +106,12 @@
 
   & .project-container-0 {
     grid-column: 1 / -1;
-    grid-row: 1 / 2;
   }
 
   & .project-container-1 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 1 / -1;
   }
 
-  & .project-container-2 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
 }
 
 .project-container {
